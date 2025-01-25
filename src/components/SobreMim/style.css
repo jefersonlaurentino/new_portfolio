@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components  {
+    .sobre__mim > article {
+        @apply flex items-center max-md:flex-col-reverse py-24 w-11/12 m-auto gap-2;
+    }
+
+    .div__my__imagem {
+        @apply flex justify-center w-1/2 max-md:w-10/12 drop-shadow-2xl;
+    }
+
+    .my__info {
+        @apply w-1/2 max-md:w-full;
+    }
+
+    .my__info h2 {
+        @apply text-4xl mb-10 font-bold;
+    }
+
+    .my__info p {
+        @apply font-semibold indent-7;
+    }
+}

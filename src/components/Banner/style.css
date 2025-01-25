@@ -1,0 +1,101 @@
+@tailwind components;
+
+@layer components {
+    .banner {
+        @apply h-svh max-h-[700px] flex justify-center md:items-center relative shadow-xl rounded-b-2xl md:bg-[url('../../assets/images/bannerPhoto.png')] max-md:bg-[url('../../assets/images/bannerphoto_phone.png')] bg-cover bg-no-repeat bg-center max-md:bg-bottom overflow-hidden;
+    }
+
+    .banner > div {
+        @apply w-11/12 flex sm:justify-between md:items-center max-md:pt-24;
+    }
+
+    .banner .info__banner {
+        @apply md:w-2/5 font-semibold text-xl;
+    }
+
+    .info__banner h1 {
+        @apply text-3xl;
+    }
+
+    .info__banner h2 {
+        @apply text-5xl;
+    }
+
+    .info__banner button {
+        @apply bg-primaria py-1 px-2 rounded-md text-white border-2 border-primaria duration-300;
+    }
+
+    .info__banner button:hover {
+        @apply bg-transparent text-primaria scale-105;
+    }
+
+    .banner .circle__info {
+        @apply absolute top-full md:top-1/2 left-1/2 md:left-2/3 -translate-x-1/2 -translate-y-1/2 border-primaria border-2 h-72 w-72 rounded-full -z-10;
+        animation: rotate__info 13s linear infinite;
+    }
+
+    .circle__info p {
+        @apply text-primaria text-xl flex flex-col justify-center py-1 px-2 bg-white dark:bg-background absolute duration-300;
+    }
+
+    .circle__info p > span {
+        @apply flex justify-center;
+    }
+
+    .circle__info p:nth-child(1) {
+        @apply md:-left-14 md:top-[35%] top-[150px] -left-16 max-md:rotate-[-105deg];
+    }
+
+    .circle__info p:nth-child(2) {
+        @apply md:rotate-[105deg] -top-8 md:-top-4 left-1/2 md:left-2/3 -translate-x-1/2;
+    }
+
+    .circle__info p:nth-child(3) {
+        @apply rotate-[105deg] md:rotate-[-105deg] bottom-20 left-[280px] md:-bottom-4 md:left-[60%] -translate-x-1/2;
+    }
+
+
+    .my__social__networks {
+        @apply flex gap-4 my-2;
+    }
+
+    .my__social__networks a {
+        @apply flex gap-1 items-center p-1 text-primaria text-xl duration-200 border-2 border-primaria rounded-lg;
+    }
+
+    .my__social__networks a:hover {
+        @apply scale-110;
+    }
+
+    .banner .button__scroll {
+        @apply absolute bottom-1 text-white text-3xl animate-bounce;
+    }
+
+    .banner Img {
+        @apply w-1/4 max-md:hidden;
+    }
+}
+
+@keyframes rotate__info {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    24% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    34% {
+        transform: translate(-50%, -50%) rotate(-105deg);
+    }
+    58% {
+        transform: translate(-50%, -50%) rotate(-105deg);
+    }
+    68% {
+        transform: translate(-50%, -50%) rotate(-255deg);
+    }
+    92% {
+        transform: translate(-50%, -50%) rotate(-255deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    } 
+}

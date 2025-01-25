@@ -1,0 +1,31 @@
+@tailwind components;
+
+@layer components {
+    .arrow__top {
+        @apply fixed bottom-10 right-7 text-2xl bg-black p-1 rounded-full cursor-pointer text-white;
+    }
+
+    footer {
+        @apply flex flex-col gap-4 bg-primaria text-white pt-5;
+    }
+
+    .conteiner {
+        @apply flex justify-around max-md:flex-col  max-md:w-11/12 max-md:m-auto;
+    }
+
+    .conteiner h4 {
+        @apply text-2xl font-semibold my-3;
+    }
+
+    .redes .redes__links {
+        @apply flex flex-col;
+    }
+
+    .conteiner a {
+      @apply underline;  
+    }
+
+    footer > p {
+        @apply text-center mb-2;
+    }
+}

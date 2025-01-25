@@ -1,0 +1,77 @@
+@tailwind components;
+
+@layer components {
+    .contact {
+        @apply flex items-center flex-col mb-11;
+    }
+
+    .contact > h4 {
+        @apply text-4xl text-center my-12 font-semibold;
+    }
+
+    .contact >h4 span {
+        @apply text-primaria;
+    }
+
+    .contact > form {
+        @apply flex flex-col gap-6 border-2 dark:border-none dark:border-neutral-700 rounded-lg p-3 shadow-xl w-11/12 max-w-lg backdrop-blur-lg;
+    }
+
+    .contact > form div {
+        @apply flex gap-1;
+    }
+
+    .contact .campos {
+        @apply flex justify-between;
+    }
+
+    .contact .campos .campo {
+        @apply w-1/2;
+    }
+
+    .contact .campo {
+        @apply flex flex-col relative;
+    }
+
+    .contact .campo p {
+        @apply absolute -bottom-5 left-2 text-red-500;
+    }
+
+    .contact > form input {
+        @apply border px-2 py-1 rounded-md w-full dark:bg-neutral-800 dark:border-none;
+    }
+
+    .contact #mail {
+        @apply w-full;
+    }
+
+    .contact > form textArea {
+        @apply resize-none border w-full h-28 rounded-md px-2 py-1 dark:bg-neutral-800 dark:border-none;
+    }
+
+    .contact button[type='submit'] {
+        @apply bg-primaria p-1 rounded-md text-white text-xl duration-300 w-11/12 m-auto;
+    }
+
+    .contact button[type='submit']:hover {
+        @apply scale-105;
+    }
+}
+
+.animation__alert {
+    visibility: hidden;
+    animation: alert__animation 3s ease;
+}
+
+@keyframes alert__animation {
+    0% {
+        opacity: 0;
+    }
+    25%, 75% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

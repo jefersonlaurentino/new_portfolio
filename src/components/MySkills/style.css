@@ -1,0 +1,40 @@
+@tailwind components;
+
+@layer components {
+    #skills {
+        @apply relative text-white flex flex-col items-center pb-16 shadow-parallax;
+    }
+
+    #skills .background > .background__imagem {
+        background-image: url('../../assets/images/Lumii_20250115_235017959.jpg');
+        @apply absolute h-full w-full -z-20 top-0 left-0 brightness-75 bg-center bg-cover bg-fixed bg-no-repeat;
+    }
+
+    #skills h3 {
+        @apply text-center font-semibold text-3xl py-16;
+    }
+
+    .slide__ling__skills {
+        @apply flex gap-5 flex-wrap justify-center border-y-4 border-primaria mx-7 rounded-lg p-2 bg-black/40 backdrop-blur-md;
+    }
+
+    .div__skill {
+        @apply flex flex-col items-center;
+    }
+
+    .soft__skills {
+        @apply flex flex-wrap gap-5 max-md:justify-center justify-around w-11/12 m-auto;
+    }
+
+    .soft__skills h4 {
+        @apply text-center;
+    }
+
+    .soft__skills .skills {
+        @apply max-w-72 border-y-4 border-primaria rounded-lg p-2 indent-5 bg-black/40 backdrop-blur-md;
+    }
+
+    .soft__skills .skills h4 {
+        @apply font-semibold text-2xl;
+    }
+}

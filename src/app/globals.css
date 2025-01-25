@@ -3,19 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --cor__primaria: #7E22C3;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
+    body {
+        @apply dark:bg-background dark:text-white max-w-screen-xl m-auto duration-300 relative;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+        --radius: 0.5rem;
+    }
 }

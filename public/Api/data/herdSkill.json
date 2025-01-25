@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "React.js",
+        "imagem": "/images/icons8-nativo-de-reagir.svg"
+    },
+    {
+        "id": 2,
+        "title": "TypeScript.js",
+        "imagem": "/images/icons8-texto-datilografado.svg"
+    },
+    {
+        "id": 3,
+        "title": "JavaScript",
+        "imagem": "/images/icons8-javascript.svg"
+    },
+    {
+        "id": 4,
+        "title": "Next.js",
+        "imagem": "/images/icons8-nextjs.svg"
+    },
+    {
+        "id": 5,
+        "title": "Tailwind.CSS",
+        "imagem": "/images/icons8-tailwindcss.svg"
+    },
+    {
+        "id": 6,
+        "title": "HTML",
+        "imagem": "/images/icons8-html.svg"
+    },
+    {
+        "id": 7,
+        "title": "CSS3",
+        "imagem": "/images/icons8-css3.svg"
+    },
+    {
+        "id": 8,
+        "title": "Git",
+        "imagem": "/images/icons8-git.svg"
+    },
+    {
+        "id": 9,
+        "title": "GitHub",
+        "imagem": "/images/icons8-github.svg"
+    },
+    {
+        "id": 10,
+        "title": "Node.js",
+        "imagem": "/images/icons8-nodejs.svg"
+    }
+]

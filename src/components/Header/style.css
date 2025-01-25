@@ -1,0 +1,75 @@
+@tailwind components;
+
+@layer components {
+    header {
+        @apply fixed w-full max-w-screen-xl z-50;
+    }
+
+    .header__scroll h2 {
+        @apply text-xl flex items-center text-primaria;
+    }
+
+    .header__scroll {
+        @apply rounded-md w-full m-auto flex justify-between items-center py-3 px-2 text-white max-md:text-black max-md:dark:text-white;
+    }
+
+    .scroll__page {
+        @apply bg-white dark:bg-background text-black dark:text-white shadow-xl;
+    }
+
+    .scroll__page a:hover {
+        @apply sm:text-primaria;
+    }
+
+    header .content__nav {
+        @apply flex items-center gap-2;
+    }
+
+    header .switch__theme {
+        @apply flex items-center gap-1 text-xl;
+    }
+
+    header nav {
+        @apply relative flex sm:flex-col max-sm:fixed max-sm:w-10/12 max-sm:text-primaria max-sm:bg-white max-sm:dark:bg-background h-full max-sm:-right-full top-0 duration-300 max-sm:z-50;
+    }
+
+    header .close__nav {
+        @apply max-sm:invisible max-sm:-right-full;
+    }
+
+    header .open__nav {
+        @apply max-sm:visible max-sm:right-0;
+    }
+
+    header ul {
+        @apply flex gap-1 max-sm:gap-2 max-sm:flex-col max-sm:w-11/12 max-sm:mx-auto max-sm:pt-14;
+    }
+
+    header li {
+        @apply flex;
+    }
+    
+    header a {
+        @apply sm:w-[80px] text-center max-sm:border-2 max-sm:border-primaria max-sm:w-full max-sm:rounded-lg max-sm:p-1 duration-300;
+    }
+
+    header a:hover {
+        @apply max-sm:bg-primaria max-sm:text-white;
+    }
+
+    header .nav__bar {
+        @apply absolute -bottom-1 w-full;
+    }
+
+    header .bar {
+        @apply relative h-1 w-[80px] bg-primaria rounded-2xl duration-300;
+    }
+
+    header .menu {
+        @apply sm:hidden text-3xl cursor-pointer;
+    }
+
+    header .close {
+        @apply absolute right-5 text-4xl cursor-pointer sm:hidden mt-3;
+    }
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "RetroStation",
+        "description": [ 
+            {
+                "id": 1,
+                "text": "RetroStation é uma plataforma de E-commerce de jogos de PlayStation 2 focada em oferecer uma experiência intuitiva e nostálgica aos usuários. Desenvolvido com Next.js, TypeScript, Tailwind-CSS, react Hook Form e zod.",
+                "img": "/images/imagens__projects/project__retrostation/img_destaque_1.png"
+            }, 
+            {
+                "id": 2,
+                "text": "Conta com um sistema robusto de validações de usuários, incluindo login e cadastro de novos usuários com suporte a reCAPTCHA para maior segurança. O site implementa restrições por faixa etária, garantindo que jogos sejam acessíveis apenas para usuários com idade adequada. Também oferece um perfil personalizável, onde os usuários podem editar suas informações, além de um carrinho de compras e uma biblioteca de jogos adquiridos.",
+                "img": "/images/imagens__projects/project__retrostation/img_destaque_2.png"
+            },
+            { 
+                "id": 3,
+                "text": "Viaje no tempo com o RetroStation e descubra como a tecnologia transforma a nostalgia dos games em uma experiência inovadora. Clique a baixo em 'Ver Projeto' e explore cada detalhe deste projeto único!",
+                "img": "/images/imagens__projects/project__retrostation/img_destaque_3.png"
+            }
+        ],
+        "lings": [ "next.js" , "react.js" , "typescript" ],
+        "imagem_pc": "/images/imagens__projects/project__retrostation/pc.png",
+        "imagem_phone": "/images/imagens__projects/project__retrostation/phone.png",
+        "complited": true,
+        "Highlighted": true,
+        "deploy": "https://retrostation.vercel.app/",
+        "repositorio": "https://github.com/jefersonlaurentino/retrostation"
+    },
+    {
+        "id": 2,
+        "title": "Site delivery",
+        "description": "O site foi criado para atender as cidades do interior onde não há apps de delivery, contendo todas as informações das pizzas, carrinho e um formulário para endereço de entrega. O site foi criado para melhorar a experiência dos usuários e a velocidade na entrega.",
+        "lings": [ "html" , "javascript" , "tailwind.css" ],
+        "imagem_pc": "/images/imagens__projects/project__delivery/pc.png",
+        "imagem_phone": "/images/imagens__projects/project__delivery/phone.png",
+        "complited": true,
+        "deploy": "https://jefersonlaurentino.github.io/site_delivery",
+        "repositorio": "https://github.com/jefersonlaurentino/site_delivery"
+    },
+    {
+        "id": 3,
+        "title": "Clima",
+        "description": "Um site de compra de jogos do PlayStation 2 com cadastro de usuarios e validações, projetado para resgatar a nostalgia dos jogos que marcaram gerações. Este foi meu primeiro contato com o Next.js e typeScript.",
+        "lings": [ "react.js" , "javascript" , "tailwind.css" ],
+        "imagem_pc": "/images/imagens__projects/project__clima/pc.png",
+        "imagem_phone": "/images/imagens__projects/project__clima/phone.png",
+        "complited": true,
+        "deploy": "https://clima-jeferson-laurentinos-projects.vercel.app",
+        "repositorio": "https://github.com/jefersonlaurentino/clima"
+    }
+]

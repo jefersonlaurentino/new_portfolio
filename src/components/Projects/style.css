@@ -1,0 +1,132 @@
+@tailwind components;
+
+@layer components {
+    .projetos {
+        @apply bg-gradientPrimaria text-white;
+    }
+    
+    .projetos h2 {
+        @apply text-center pt-16 text-4xl font-semibold;
+    }
+
+    .projetos .highlighted__project {
+        @apply flex flex-col w-11/12 m-auto;
+    }
+
+    .highlighted__project h3 {
+        @apply text-3xl font-semibold mb-2 my-10 mx-2;
+    }
+
+    .highlighted__project .campo__infos {
+        @apply flex flex-col gap-10 ;
+    }
+
+    .info__highlighted__project {
+        @apply flex max-sm:flex-col items-center;
+    }
+
+    .text__highlighted__project {
+        @apply bg-gradient-to-l to-black/50 from-transparent px-3 py-8 rounded-md flex h-full;
+    }
+
+    .info__highlighted__project:nth-child(even) {
+        @apply flex-row-reverse max-sm:flex-col-reverse;
+    }
+
+    .info__highlighted__project .text__highlighted__project {
+        @apply w-3/5 max-sm:w-full indent-5;
+    }
+
+    .info__highlighted__project .img__highlighted__project ,  
+    .last__info .img__highlighted__project {
+        @apply w-2/5 max-sm:w-full max-sm:max-w-[380px] max-w-[550px] mb-3;
+    }
+    .info__highlighted__project .img__highlighted__project img {
+        @apply max-w-full;
+    }
+
+    .last__info {
+        @apply flex flex-col items-center text-xl text-center gap-3;
+    }
+
+    .last__info .img__highlighted__project img {
+        @apply w-full;
+    }
+
+    .last__info .buttons {
+        @apply flex gap-5;
+    }
+
+    .last__info .buttons a {
+        @apply border-white border-2 px-4 py-1 rounded-md font-semibold duration-300;
+    }
+
+    .last__info .buttons a:hover , .links__project a:hover{
+        @apply scale-105 bg-white text-primaria;
+    }
+    
+    .slide__projects {
+        @apply w-11/12 m-auto flex flex-wrap max-md:flex-col gap-5 py-10 justify-center;
+    }
+    
+    .slide__projects .project {
+        @apply flex flex-col justify-between md:min-w-[380px] lg:max-w-[560px] md:w-[350px] grow p-2 rounded-lg border-y-4 backdrop-blur-xl border-white;
+    }
+
+    .header__project {
+        @apply flex justify-between;
+    }
+
+    .lings__use__project {
+        @apply flex gap-2;
+    }
+
+    .lings__use__project img {
+        @apply w-6;
+    }
+    
+    .info__project {
+        @apply flex justify-between max-md:flex-col items-center;
+    }
+
+    .info__project p {
+        @apply md:w-[calc(100%-12rem)];
+    }
+    
+    .project h4 {
+        @apply text-xl font-semibold;
+    }
+
+    .project p {
+        @apply indent-4;
+    }
+
+    .imagem__project {
+        @apply w-48 h-[168px] relative;
+    }
+
+    .imagem__project .img__pc {
+        @apply absolute top-[30px] left-1 w-full h-[110px] z-10;
+    }
+
+    .imagem__project .img__phone {
+        @apply absolute -bottom-14 -right-8 w-1/4 -translate-x-1/2 -translate-y-1/2 z-20;
+    }
+
+    .imagem__project .img__project__pc {
+        @apply absolute top-[37px] left-[37px] w-[130px] h-[75.5px];
+    }
+
+    .imagem__project .img__project__phone {
+        @apply absolute top-[92px] right-[-2px] w-[36px] h-[78px] z-10 rounded-md;
+    }
+
+    .project .links__project {
+        @apply flex justify-around mt-2;
+    }
+
+    .links__project a {
+        @apply border-2 border-white text-xl w-1/3 py-1 text-center font-semibold rounded-md duration-300;
+    }
+}
+    

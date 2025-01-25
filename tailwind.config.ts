@@ -7,12 +7,25 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
+  	extend: {
+  		colors: {
+  			background: '#0B071E',
+  			foreground: 'var(--foreground)',
+  			primaria: '#5118C7'
+  		},
+  		backgroundImage: {
+  			gradientPrimaria: 'linear-gradient(to top, #5118C7, #5118C7)'
+  		},
+  		boxShadow: {
+  			parallax: 'inset 0px 0px 20px 11px #00000087'
+  		},
+  		borderRadius: {
+  			lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
+  			sm: 'calc(var(--radius) - 4px)'
+  		}
+  	}
   },
-  plugins: [],
+  darkMode: ['selector', '[data-mode="dark"]'],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
