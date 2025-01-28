@@ -21,12 +21,12 @@
         @apply text-5xl;
     }
 
-    .info__banner button {
+    .info__banner .download__cv {
         @apply bg-primaria py-1 px-2 rounded-md text-white border-2 border-primaria duration-300;
     }
 
-    .info__banner button:hover {
-        @apply bg-transparent text-primaria scale-105;
+    .info__banner .download__cv:hover {
+        @apply bg-transparent text-primaria scale-105 cursor-pointer;
     }
 
     .banner .circle__info {

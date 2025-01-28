@@ -79,7 +79,9 @@ export default function Header() {
         <>
         <header>
             <section className='header__scroll'>
-                <h2>{'< '}Jeferson{' />'}</h2>
+                <a href="#home">
+                    <h2>{'< '}Jeferson{' />'}</h2>
+                </a>
                 <div className='content__nav'>
                     <nav className='close__nav'>
                         <button 

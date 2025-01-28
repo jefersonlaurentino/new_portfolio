@@ -46,7 +46,7 @@ export default function MySkills() {
                 </article>
                 <article className="skills">
                     <h4>Criatividade</h4>
-                    <p>Tenho habilidade e pensar fora da caixa para desenvolver soluções únicas. Nos meus projetos Usando minha criatividade para criar designs atraentes e funcionalidades personalizadas que melhora a experiência do usuario.</p>
+                    <p>Tenho habilidade e pensar fora da caixa para desenvolver soluções únicas. Nos meus projetos, uso minha criatividade para criar designs atraentes e funcionalidades personalizadas que melhoram a experiência do usuário.</p>
                 </article>
                 <article className="skills">
                     <h4>Ética</h4>

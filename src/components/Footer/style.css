@@ -2,7 +2,7 @@
 
 @layer components {
     .arrow__top {
-        @apply fixed bottom-10 right-7 text-2xl bg-black p-1 rounded-full cursor-pointer text-white;
+        @apply fixed bottom-10 2xl:right-56 right-7 text-2xl bg-black p-1 rounded-full cursor-pointer text-white;
     }
 
     footer {

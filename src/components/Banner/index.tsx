@@ -17,12 +17,12 @@ export default function Banner() {
                     <div className='info__banner'>
                         <h1>Olá, eu sou</h1>
                         <h2>Jeferson Laurentino</h2>
-                        <p>Desenvolvedor Front-End criar interfaces modernas e responsivas.</p>
+                        <p>Desenvolvedor Front-End, criando interfaces modernas e responsivas.</p>
                         <div className='my__social__networks'>
                             <a href="https://www.linkedin.com/in/jefersonlaurentino" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
                             <a href="https://github.com/jefersonlaurentino" target="_blank" rel="noopener noreferrer"><FaGithub/></a>
                         </div>
-                        <button>Download CV</button>
+                        <a className='download__cv' href='/documents/meu_currículo.pdf' download={"curriculo_jeferson_laurentino"}>Download CV</a>
                     </div>
                     <Image 
                         src={imagem}

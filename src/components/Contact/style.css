@@ -59,7 +59,7 @@
 }
 
 .animation__alert {
-    visibility: hidden;
+    /* visibility: hidden; */
     animation: alert__animation 3s ease;
 }
 

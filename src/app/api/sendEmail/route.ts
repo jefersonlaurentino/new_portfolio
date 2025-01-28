@@ -11,14 +11,14 @@ export async function POST(req: Request) {
       port: 587,
       secure: false,
       auth: {
-        user: process.env.MAIL_USER,
+        user: process.env.MAIL_USER_FROM,
         pass: process.env.MAIL_PASS,
       },
     });
 
     await transporter.sendMail({
-      from: process.env.MAIL_USER,
-      to: process.env.MAIL_USER, // Envia para o próprio e-mail
+      from: process.env.MAIL_USER_FROM,
+      to: process.env.MAIL_USER_TO, // Envia para o próprio e-mail
       replyTo,
       subject,
       html,

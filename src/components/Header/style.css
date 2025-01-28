@@ -49,11 +49,11 @@
         @apply flex;
     }
     
-    header a {
+    .content__nav a {
         @apply sm:w-[80px] text-center max-sm:border-2 max-sm:border-primaria max-sm:w-full max-sm:rounded-lg max-sm:p-1 duration-300;
     }
 
-    header a:hover {
+    .content__nav a:hover {
         @apply max-sm:bg-primaria max-sm:text-white;
     }
 

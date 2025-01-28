@@ -31,13 +31,13 @@ export default function Projects() {
                 myProjects ?
                 <>
                 <section className='highlighted__project'>
-                <h3>RetroStation</h3>
+                    <h3>RetroStation</h3>
                 <div className='campo__infos'>
                     {
                         myProjects?.map((project)=>{
                             return (
                                 (project.Highlighted) &&
-                                    <React.Fragment key={project.id}>
+                                <React.Fragment key={project.id}>
                                         {
                                             Array.isArray(project.description) && project.description.map((description, index)=>{
                                                     if (index == 2) {
@@ -96,7 +96,7 @@ export default function Projects() {
                                                         <Image 
                                                             src={ling!.imagem} 
                                                             key={ling!.id}
-                                                            alt={`tecnologia usada ${ling!.title}`}
+                                                            alt={`Tecnologia usada ${ling!.title}`}
                                                             height={50}
                                                             width={50}
                                                             className='w-full'

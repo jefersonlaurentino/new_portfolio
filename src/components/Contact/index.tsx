@@ -120,14 +120,14 @@ export default function Contact() {
                 msgSending != null && (
                     msgSending.success?
                     <section className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center animation__alert">
-                        <article className="bg-white p-4 rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center border-green-600 border">
+                        <article className="bg-white text-black p-4 rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center border-green-600 border">
                             <CheckCircle className=" text-green-600"/>
                             <h1>Enviado com sucesso!</h1>
                         </article>
                     </section>
                     :
                     <section className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center animation__alert">
-                        <article className="bg-white p-4 rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center border-red-600 border">
+                        <article className="bg-white text-black p-4 rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center border-red-600 border">
                             <XCircle className=" text-red-600"/>
                             <h1>Erro ao Enviado!</h1>
                         </article>
