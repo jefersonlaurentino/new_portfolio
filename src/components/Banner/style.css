@@ -2,7 +2,7 @@
 
 @layer components {
     .banner {
-        @apply h-svh max-h-[700px] flex justify-center md:items-center relative shadow-xl rounded-b-2xl md:bg-[url('../../assets/images/bannerPhoto.png')] max-md:bg-[url('../../assets/images/bannerphoto_phone.png')] bg-cover bg-no-repeat bg-center max-md:bg-bottom overflow-hidden;
+        @apply h-svh max-h-[700px] flex justify-center md:items-center relative shadow-xl rounded-b-2xl md:bg-[url('/images/imagens_site/bannerPhoto.png')] max-md:bg-[url('/images/imagens_site/bannerphoto_phone.png')] bg-cover bg-no-repeat bg-center max-md:bg-bottom overflow-hidden;
     }
 
     .banner > div {

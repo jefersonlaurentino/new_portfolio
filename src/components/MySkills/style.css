@@ -2,11 +2,11 @@
 
 @layer components {
     #skills {
-        @apply relative text-white flex flex-col items-center pb-16 shadow-parallax;
+        @apply relative text-white flex flex-col items-center pb-16 shadow-parallax overflow-hidden;
     }
 
     #skills .background > .background__imagem {
-        background-image: url('../../assets/images/Lumii_20250115_235017959.jpg');
+        background-image: url('/images/imagens_site/img_background_skills.jpg');
         @apply absolute h-full w-full -z-20 top-0 left-0 brightness-75 bg-center bg-cover bg-fixed bg-no-repeat;
     }
 

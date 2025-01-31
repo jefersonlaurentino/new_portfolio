@@ -2,7 +2,7 @@
 
 @layer components  {
     .sobre__mim > article {
-        @apply flex items-center max-md:flex-col-reverse py-20 w-11/12 m-auto gap-2;
+        @apply flex items-center max-md:flex-col-reverse py-20 w-11/12 m-auto gap-2 overflow-hidden;
     }
 
     .div__my__imagem {

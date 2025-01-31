@@ -40,15 +40,15 @@ export default function MySkills() {
             <h3>Soft Skills</h3>
 
             <section className="soft__skills">
-                <article className="skills">
+                <article className="skills" id="skills_1">
                     <h4>Resiliência</h4>
                     <p>Dediquei os últimos dois anos ao aprendizado de programação, superando desafios e desenvolvendo projetos como o RetroStation. Essa jornada reforçou minha capacidade de adaptação, foco e persistência em alcançar resultados.</p>
                 </article>
-                <article className="skills">
+                <article className="skills" id="skills_2">
                     <h4>Criatividade</h4>
                     <p>Tenho habilidade e pensar fora da caixa para desenvolver soluções únicas. Nos meus projetos, uso minha criatividade para criar designs atraentes e funcionalidades personalizadas que melhoram a experiência do usuário.</p>
                 </article>
-                <article className="skills">
+                <article className="skills" id="skills_3">
                     <h4>Ética</h4>
                     <p>Sou guiado por princípios de honestidade e respeito, tanto na vida pessoal quanto na profissional. Sempre busco agir com integridade, confiança e no compromisso de fazer o que é certo.</p>
                 </article>

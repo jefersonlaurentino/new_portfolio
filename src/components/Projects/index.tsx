@@ -48,6 +48,7 @@ export default function Projects() {
                                                                 <Image 
                                                                     src={description.img}
                                                                     alt='Imagem pc'
+                                                                    priority
                                                                     height={550}
                                                                     width={550}
                                                                 />
@@ -60,12 +61,13 @@ export default function Projects() {
                                                         )
                                                     } else {
                                                         return (
-                                                            <article className='info__highlighted__project' key={description.id}>
+                                                            <article className={`info__highlighted__project project${description.id}`} key={description.id}>
                                                                 <p className='text__highlighted__project'>{description.text}</p>
                                                                 <div className='img__highlighted__project'>
                                                                     <Image 
                                                                         src={description.img}
                                                                         alt='Imagem pc'
+                                                                        priority
                                                                         height={550}
                                                                         width={550}
                                                                     />
@@ -98,6 +100,7 @@ export default function Projects() {
                                                             key={ling!.id}
                                                             alt={`Tecnologia usada ${ling!.title}`}
                                                             height={50}
+                                                            priority
                                                             width={50}
                                                             className='w-full'
                                                         />
@@ -110,32 +113,11 @@ export default function Projects() {
                                         <p>{ project.description.toString() }</p>
                                         <div className='imagem__project'>
                                             <Image 
-                                                src={'/images/imagens__projects/tela_pc.png'}
+                                                src={project.imagem!}
                                                 alt='Imagem pc'
-                                                height={80}
-                                                width={80}
-                                                className='img__pc'
-                                            />
-                                            <Image 
-                                                src={'/images/imagens__projects/tela_celular.png'}
-                                                alt='Imagem celular'
-                                                height={80}
-                                                width={80}
-                                                className='img__phone'
-                                            />
-                                            <Image 
-                                                src={project.complited? project?.imagem_pc : '/images/imagens__projects/erro__img/pc-embreve.jpg'}
-                                                alt='Imagem celular'
-                                                height={80}
-                                                width={80}
-                                                className='img__project__pc'
-                                            />
-                                            <Image 
-                                                src={project.complited? project?.imagem_phone : '/images/imagens__projects/erro__img/cl-embreve.jpg'}
-                                                alt='Imagem celular'
-                                                height={80}
-                                                width={80}
-                                                className='img__project__phone'
+                                                priority
+                                                height={400}
+                                                width={400}
                                             />
                                         </div>
                                     </div>
@@ -149,7 +131,7 @@ export default function Projects() {
                         })
                 }
             </section>
-                </>
+            </>
             :
             <div className='text-center w-1/2 m-auto py-20'>Carregando...</div>
             }

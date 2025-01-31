@@ -9,13 +9,15 @@ export default function AnimationFooter() {
         gsap.fromTo( '.arrow__top', 
             {
                 opacity: 0,
-            },
-            {
-              opacity: 1,
-              scrollTrigger: {
-                trigger: '#projects',
-                start: "top 90%",
-                toggleActions: "play none none reverse",
+                visibility: 'hidden'
+              },
+              {
+                opacity: 1,
+                visibility: 'visible',
+                scrollTrigger: {
+                  trigger: '#projects',
+                  start: "top 90%",
+                  toggleActions: "play none none reverse",
               },
             }
           )

@@ -19,10 +19,8 @@ export type ApiProjects = {
     lings: string[];
     description: string | description[];
     Highlighted?: boolean;
-    complited: boolean;
-    imagens?: string[]; 
-    imagem_pc: string;
-    imagem_phone: string;
+    complited: boolean; 
+    imagem?: string;
     repositorio: string;
     deploy: string;
 }

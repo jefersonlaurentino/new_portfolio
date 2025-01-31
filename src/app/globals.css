@@ -10,8 +10,9 @@
     body {
         @apply dark:bg-background dark:text-white max-w-screen-xl m-auto duration-300 relative;
     }
-
+    
     html {
+        scroll-padding-top: 10px;
         scroll-behavior: smooth;
     }
   :root {

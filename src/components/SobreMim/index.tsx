@@ -1,5 +1,4 @@
 import Image from "next/image";
-import myImagem from '../../assets/images/20250115_145222.png';
 import './style.css'
 import AnimacaoAbout from "./animationAbout";
 
@@ -10,8 +9,11 @@ export default function SobreMim() {
             <article>
                 <div className="div__my__imagem">
                     <Image
-                        src={myImagem}
+                        src={'/images/imagens_site/my_photo_with_background.png'}
                         alt="Uma imagem minha"
+                        priority
+                        height={200}
+                        width={200}
                         className="w-1/2"
                     />
                 </div>
@@ -22,7 +24,7 @@ export default function SobreMim() {
                 </div>
             </article>
         </section>
-        <AnimacaoAbout/>
+        <AnimacaoAbout />
         </>
     )
 }

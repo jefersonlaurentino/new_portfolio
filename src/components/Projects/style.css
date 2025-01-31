@@ -2,7 +2,7 @@
 
 @layer components {
     .projetos {
-        @apply bg-gradientPrimaria text-white;
+        @apply bg-gradientPrimaria text-white overflow-hidden;
     }
     
     .projetos h2 {
@@ -90,35 +90,19 @@
     }
 
     .info__project p {
-        @apply md:w-[calc(100%-12rem)];
+        @apply max-md:w-full w-3/5 indent-4;
     }
     
     .project h4 {
         @apply text-xl font-semibold;
     }
 
-    .project p {
-        @apply indent-4;
-    }
-
     .imagem__project {
-        @apply w-48 h-[168px] relative;
+        @apply flex items-center w-2/5 max-md:w-1/2 max-sm:w-3/5;
     }
 
-    .imagem__project .img__pc {
-        @apply absolute top-[30px] left-1 w-full h-[110px] z-10;
-    }
-
-    .imagem__project .img__phone {
-        @apply absolute -bottom-14 -right-8 w-1/4 -translate-x-1/2 -translate-y-1/2 z-20;
-    }
-
-    .imagem__project .img__project__pc {
-        @apply absolute top-[37px] left-[37px] w-[130px] h-[75.5px];
-    }
-
-    .imagem__project .img__project__phone {
-        @apply absolute top-[92px] right-[-2px] w-[36px] h-[78px] z-10 rounded-md;
+    .imagem__project > img {
+        @apply w-full;
     }
 
     .project .links__project {

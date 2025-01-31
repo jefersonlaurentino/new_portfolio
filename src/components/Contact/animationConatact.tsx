@@ -1,5 +1,6 @@
 'use client'
 
+import { animationTopBottom, animationVisible } from "@/functions/Animation/animationElements"
 import createScrollTrigger from "@/functions/Animation/navBarAnimation"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useEffect } from "react"
@@ -15,7 +16,17 @@ export default function AnimationContact() {
                     document.querySelector('#contact__link')?.classList.toggle('text-primaria')
                 }
             })
-        },3500)
+
+            animationTopBottom({
+                elementAnimation: '.contact h4 span',
+                elementListener: '.contact',
+            })
+
+            animationVisible({
+                elementAnimation: '.contact form',
+                elementListener: '.contact form',
+            })
+        },5000)
 
         return () =>{
             ScrollTrigger.killAll()

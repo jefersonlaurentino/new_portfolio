@@ -1,7 +1,5 @@
-'use client'
 import Image from 'next/image';
 import './style.css';
-import imagem from '../../assets/images/myPhoto.png';
 import { FaArrowCircleDown, FaGithub, FaLinkedin, FaReact } from 'react-icons/fa';
 import { IoCodeSlashOutline } from 'react-icons/io5';
 import { RiNextjsLine } from 'react-icons/ri';
@@ -22,11 +20,14 @@ export default function Banner() {
                             <a href="https://www.linkedin.com/in/jefersonlaurentino" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
                             <a href="https://github.com/jefersonlaurentino" target="_blank" rel="noopener noreferrer"><FaGithub/></a>
                         </div>
-                        <a className='download__cv' href='/documents/meu_currículo.pdf' download={"curriculo_jeferson_laurentino"}>Download CV</a>
+                        <a className='download__cv' href='/documents/curriculo_jeferson_laurentino.pdf' download>Download CV</a>
                     </div>
                     <Image 
-                        src={imagem}
+                        src={'/images/imagens_site/myPhoto.png'}
                         alt='Uma Imagem minha'
+                        priority
+                        width={200}
+                        height={200}
                         />
                 </div>
                 <a href='#about__me' className='button__scroll'>
