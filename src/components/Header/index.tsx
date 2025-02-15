@@ -115,6 +115,7 @@ export default function Header() {
                         <Switch 
                             checked={darkMode}
                             onCheckedChange={setDarkMode}
+                            aria-label={darkMode? "Alternar para modo claro" : "Alternar para modo escuro"}
                         />
                         <MdOutlineDarkMode />
                     </div>

@@ -17,8 +17,20 @@ export default function Banner() {
                         <h2>Jeferson Laurentino</h2>
                         <p>Desenvolvedor Front-End, criando interfaces modernas e responsivas.</p>
                         <div className='my__social__networks'>
-                            <a href="https://www.linkedin.com/in/jefersonlaurentino" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
-                            <a href="https://github.com/jefersonlaurentino" target="_blank" rel="noopener noreferrer"><FaGithub/></a>
+                            <a 
+                                href="https://www.linkedin.com/in/jefersonlaurentino" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                aria-label='Ver meu Linkedin'>
+                                    <FaLinkedin/>
+                            </a>
+                            <a 
+                                href="https://github.com/jefersonlaurentino" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                aria-label='Ver meu Github'>
+                                    <FaGithub/>
+                            </a>
                         </div>
                         <a className='download__cv' href='/documents/curriculo_jeferson_laurentino.pdf' download>Download CV</a>
                     </div>
@@ -30,7 +42,7 @@ export default function Banner() {
                         height={200}
                         />
                 </div>
-                <a href='#about__me' className='button__scroll'>
+                <a href='#about__me' className='button__scroll' aria-label='Descer para a seção Sobre mim'>
                     <FaArrowCircleDown/>
                 </a>
                 <div className='circle__info'>

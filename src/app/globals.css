@@ -8,7 +8,11 @@
 
 @layer base {
     body {
-        @apply dark:bg-background dark:text-white max-w-screen-xl m-auto duration-300 relative;
+        @apply dark:bg-background dark:text-white max-w-screen-2xl m-auto duration-300 relative;
+    }
+
+    body p {
+        @apply 2xl:text-lg;
     }
     
     html {

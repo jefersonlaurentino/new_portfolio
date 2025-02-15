@@ -2,7 +2,7 @@
 
 @layer components {
     .banner {
-        @apply h-svh max-h-[700px] flex justify-center md:items-center relative shadow-xl rounded-b-2xl md:bg-[url('/images/imagens_site/bannerPhoto.png')] max-md:bg-[url('/images/imagens_site/bannerphoto_phone.png')] bg-cover bg-no-repeat bg-center max-md:bg-bottom overflow-hidden;
+        @apply h-svh sm:max-h-[700px] flex justify-center md:items-center relative shadow-xl rounded-b-2xl md:bg-[url('/images/imagens_site/bannerPhoto.png')] max-md:bg-[url('/images/imagens_site/bannerphoto_phone.png')] bg-cover bg-no-repeat bg-center max-md:bg-bottom overflow-hidden;
     }
 
     .banner > div {
@@ -56,7 +56,7 @@
 
 
     .my__social__networks {
-        @apply flex gap-4 my-2;
+        @apply flex gap-4 my-3;
     }
 
     .my__social__networks a {
