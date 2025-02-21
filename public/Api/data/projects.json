@@ -5,7 +5,7 @@
         "description": [ 
             {
                 "id": 1,
-                "text": "RetroStation é uma plataforma de E-commerce de jogos de PlayStation 2 focada em oferecer uma experiência intuitiva e nostálgica aos usuários. Desenvolvido com Next.js, TypeScript, Tailwind-CSS, react Hook Form e zod.",
+                "text": "RetroStation é uma plataforma de e-commerce de jogos de PlayStation 2 focada em oferecer uma experiência intuitiva e nostálgica aos usuários. Desenvolvido com Next.js, TypeScript, Tailwind CSS, React Hook Form e Zod.",
                 "img": "/images/imagens__projects/project__retrostation/img_destaque_1.png"
             }, 
             {
@@ -28,7 +28,7 @@
     {
         "id": 2,
         "title": "Site delivery",
-        "description": "O site foi criado para atender as cidades do interior onde não há apps de delivery, contendo todas as informações das pizzas, carrinho e um formulário para endereço de entrega. O site foi criado para melhorar a experiência dos usuários e a velocidade na entrega.",
+        "description": "O site foi criado para atender às cidades do interior onde não há apps de delivery, contendo todas as informações sobre as pizzas, carrinho e um formulário para endereço de entrega. O site foi criado para melhorar a experiência dos usuários e a velocidade na entrega.",
         "lings": [ "html" , "javascript" , "tailwind.css" ],
         "imagem": "/images/imagens__projects/project__delivery/img_project_delivery.png",
         "complited": true,
